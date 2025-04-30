@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Design by foolishdeveloper.com -->
+    <title> login Form</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./index.css">
+    
+</head>
+
+<body>
+    <a href=""></a>
+    <div class="background">
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+    <section>
+        <form>
+            <div class="form_heading">
+                <h3>Login Here</h3>
+            </div>
+
+
+            <label for="username">Username</label>
+            <input type="text" placeholder="Email or Phone" id="username">
+
+            <label for="password">Password</label>
+            <input type="password" placeholder="Password" id="password">
+
+            <div class="button">
+                <button type="submit" class="login">Login</button>
+                <button type="submit" class="signup">Sign Up</button>
+            </div>
+            <div class="social">
+                <div class="go"><i class="fab fa-google"></i> Google</div>
+                <div class="fb"><i class="fab fa-facebook"></i> Facebook</div>
+            </div>
+
+        </form>
+        <div id="todo-container" style="display: none;">
+            <!-- todo list header -->
+            <div id="header">
+                <h1>To Do List</h1>
+            </div>
+
+            <!-- create input box -->
+            <div id="todo-form">
+                <input type="text" class="input-item" name="input_box" id="input-box" placeholder="Add Task" /><span>
+                    <button id="input-button">Add</button>
+                </span>
+
+                <!-- add button -->
+                
+            </div>
+
+            <!-- task list -->
+            <h2>Task List</h2>
+            <ul id="list-container">
+
+            </ul>
+            <hr />
+            <!-- task list counter -->
+            <div class="counter-container">
+                <div id="task-counters">
+                    Completed: <span id="completed-counter">0</span> | Uncompleted:
+                    <span id="uncompleted-counter">0</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="./index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>
