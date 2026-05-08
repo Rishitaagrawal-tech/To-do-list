@@ -88,10 +88,14 @@ label {
     font-weight: 500;
 }
 
+.logininput{
+    width: 100%;
+    height: 50px;
+}
+
 input {
     display: block;
-    height: 50px;
-    width: 100%;
+    height: 25px;
     background-color: rgba(255, 255, 255, 0.07);
     border-radius: 3px;
     padding: 0 10px;
@@ -116,7 +120,7 @@ input {
     cursor: pointer;
 }
 
-button {
+.button button {
     width: 50%;
     height: 100%;
     border-radius: 5px;
@@ -291,14 +295,16 @@ button {
     color: rgba(255, 255, 255, 0.9);
 }
 
-#list-container {
-    max-height: 250px; /* Increased height for better visibility */
-}
+
 
 #list-container li span {
     flex-grow: 1;
     cursor: pointer;
     padding: 5px 0;
+        width: 50%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    
 }
 
 #list-container li.completed span {
@@ -369,7 +375,7 @@ hr {
 
 #list-container {
     margin: 15px 0;
-    max-height: 300px;
+    /* max-height: 300px; */
     flex: 1;
 }
 #list-container::-webkit-scrollbar{
